@@ -6,6 +6,37 @@ on:
     branches : [ main ]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v2
+
+      - name: Run lint
+        run: ./gradlew lintDebug
+
+      - name: upload lint html test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: lint.html
+          path: app/build/reports/lint-results-debug.html
+
+  unit-test:
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v2
+
+      - name: run tests
+        run: ./gradlew test
+
+      - name: upload test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_test_report
+          path: app/build/reports/tests/testDebugUnitTest/
+
   build:
     runs-on: ubuntu-latest
     steps:
