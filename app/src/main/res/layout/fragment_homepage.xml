@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnHomePersonalInfoForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Personal information form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnHomeOralExamForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Oral Examination form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnHomeOralSurgeonForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Oral Surgeon form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnHomeBreastExamForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Breast Exam form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnHomeBreastSurgeonForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Breast Surgeon form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnHomeCervixExamForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cervix Exam form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnHomeCervixSurgeonForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Cervix Surgeon form"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnReceiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive data on WiFi"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnViewAndSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View and Send data on WiFi"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnHomeUploadDataToServer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Upload data to online server"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </TableLayout>
+    <!-- <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+ <Button
+            android:id="@+id/btnHomePersonalInfoForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Personal information form"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnHomeOralExamForms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/btnHomeOralExamForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Oral Examination form"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnHomeOralSurgeonForms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnHomeOralSurgeonForms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Oral Surgeon form"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnReceiveData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnReceiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:text="View and Send data on WiFi"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="btnViewAndSendData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/btnViewAndSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp"
+            android:text="View and Send data on WiFi"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnReceiveData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout> -->
+</androidx.core.widget.NestedScrollView>

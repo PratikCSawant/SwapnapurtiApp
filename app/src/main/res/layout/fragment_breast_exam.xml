@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreastExamFragment">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_span="3"
+                        android:text="Breast Examination Form"
+                        android:padding="9dp"
+                        android:textAlignment="center"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/buttonBreastExamFormFragmentSave"
+                        android:layout_column="0"
+                        android:text="Save" />
+                    <CheckBox
+                        android:id="@+id/checkboxBreastExamSaveAtServer"
+                        android:layout_column="1"
+                        android:padding="9dp"
+                        android:text="Save at server" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Unique ID"
+                        android:padding="9dp"/>
+                    <EditText
+                        android:layout_column="1"
+                        android:id="@+id/editTextBreastExamFormFragmentUniqueID"
+                        android:hint="Unique ID of the patient">
+
+                    </EditText>
+                    <Button
+                        android:id="@+id/buttonBreastExamFormFragmentSearch"
+                        android:layout_column="2"
+                        android:text="Search" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Village"
+                        android:padding="9dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerBreastExamFormFragmentVillage"
+                        android:layout_column="1"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Name"
+                        android:padding="9dp"/>
+                    <EditText
+                        android:layout_column="1"
+                        android:id="@+id/editTextBreastExamFormFragmentName"
+                        android:hint="NAME of the patient">
+
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Sex"
+                        android:padding="9dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerBreastExamFormFragmentSex"
+                        android:layout_column="1"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="@android:color/black" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Age"
+                        android:padding="9dp"/>
+                    <EditText
+                        android:layout_column="1"
+                        android:id="@+id/editTextBreastExamFormFragmentAge"
+                        android:hint="AGE">
+                    </EditText>
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Contact no."
+                        android:padding="9dp"/>
+                    <EditText
+                        android:layout_column="1"
+                        android:id="@+id/editTextBreastExamFormFragmentContactNo"
+                        android:hint="CONTACT NO.">
+                    </EditText>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text=""
+                        android:padding="9dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Breast lump"
+                        android:padding="9dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerBreastExamFormFragmentBreastLump"
+                        android:layout_column="1"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Nipple discharge"
+                        android:padding="9dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerBreastExamFormFragmentNippleDischarge"
+                        android:layout_column="1"
+                        tools:ignore="HardcodedText"
+                        tools:textColor="@android:color/black" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="0"
+                        android:text="Other lesion "
+                        android:padding="9dp"/>
+                    <EditText
+                        android:layout_column="1"
+                        android:id="@+id/editTextBreastExamFormFragmentOtherLesion"
+                        android:hint="Enter OTHER LESION">
+                    </EditText>
+
+                </TableRow>
+
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+</FrameLayout>

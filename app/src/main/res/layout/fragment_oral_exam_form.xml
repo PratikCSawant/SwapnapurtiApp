@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OralExamFormFragment">
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_span="3"
+                android:text="Oral Examination Form"
+                android:padding="9dp"
+                android:textAlignment="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonOralExamFormFragmentSave"
+                android:layout_column="0"
+                android:text="Save" />
+            <CheckBox
+                android:id="@+id/checkboxOralExamSaveAtServer"
+                android:layout_column="1"
+                android:padding="9dp"
+                android:text="Save at server" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Unique ID"
+                android:padding="9dp"/>
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/editTextOralExamFormFragmentUniqueID"
+                android:hint="Unique ID of the patient">
+
+            </EditText>
+            <Button
+                android:id="@+id/buttonOralExamFormFragmentSearch"
+                android:layout_column="2"
+                android:text="Search" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Village"
+                android:padding="9dp"/>
+            <Spinner
+                android:id="@+id/spinnerOralExamFormFragmentVillage"
+                android:layout_column="1"
+                tools:ignore="HardcodedText"
+                tools:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Name"
+                android:padding="9dp"/>
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/editTextOralExamFormFragmentName"
+                android:hint="Enter NAME of the patient">
+
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Sex"
+                android:padding="9dp"/>
+            <Spinner
+                android:id="@+id/spinnerOralExamFormFragmentSex"
+                android:layout_column="1"
+                tools:ignore="HardcodedText"
+                tools:textColor="@android:color/black" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Age"
+                android:padding="9dp"/>
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/editTextOralExamFormFragmentAge"
+                android:hint="Enter AGE">
+            </EditText>
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Contact no."
+                android:padding="9dp"/>
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/editTextOralExamFormFragmentContactNo"
+                android:hint="Enter CONTACT NO.">
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text=""
+                android:padding="9dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Oral hygiene"
+                android:padding="9dp"/>
+            <Spinner
+                android:id="@+id/spinnerOralExamFormFragmentOralHygiene"
+                android:layout_column="1"
+                tools:ignore="HardcodedText"
+                tools:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Screen positive"
+                android:padding="9dp"/>
+            <Spinner
+                android:id="@+id/spinnerOralExamFormFragmentScreenPositive"
+                android:layout_column="1"
+                tools:ignore="HardcodedText"
+                tools:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_column="0"
+                android:text="Lesion type"
+                android:padding="9dp"/>
+            <EditText
+                android:layout_column="1"
+                android:id="@+id/editTextOralExamFormFragmentLesionType"
+                android:hint="Enter LESION TYPE">
+            </EditText>
+
+        </TableRow>
+
+    </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</HorizontalScrollView>
+</androidx.core.widget.NestedScrollView>

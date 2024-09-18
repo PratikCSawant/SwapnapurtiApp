@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.swapnapurtiapp.LoginFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.swapnapurtiapp.HomepageFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/action_homepageFragment_to_personalInfoFormFragment"
+            app:destination="@id/personalInfoFormFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_oralExamFormFragment"
+            app:destination="@id/oralExamFormFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_viewAndSendDataFragment"
+            app:destination="@id/viewAndSendDataFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_receiveDataFragment"
+            app:destination="@id/receiveDataFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_breastExamFragment"
+            app:destination="@id/breastExamFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_uploadToServerFragment"
+            app:destination="@id/uploadToServerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFormFragment"
+        android:name="com.example.swapnapurtiapp.PersonalInfoFormFragment"
+        android:label="fragment_personal_info_form"
+        tools:layout="@layout/fragment_personal_info_form" >
+        <action
+            android:id="@+id/action_personalInfoFormFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oralExamFormFragment"
+        android:name="com.example.swapnapurtiapp.OralExamFormFragment"
+        android:label="fragment_oral_exam_form"
+        tools:layout="@layout/fragment_oral_exam_form" >
+        <action
+            android:id="@+id/action_oralExamFormFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewAndSendDataFragment"
+        android:name="com.example.swapnapurtiapp.ViewAndSendDataFragment"
+        android:label="fragment_view_and_send_data"
+        tools:layout="@layout/fragment_view_and_send_data" >
+        <action
+            android:id="@+id/action_viewAndSendDataFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveDataFragment"
+        android:name="com.example.swapnapurtiapp.ReceiveDataFragment"
+        android:label="fragment_receive_data"
+        tools:layout="@layout/fragment_receive_data" >
+        <action
+            android:id="@+id/action_receiveDataFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breastExamFragment"
+        android:name="com.example.swapnapurtiapp.BreastExamFragment"
+        android:label="fragment_breast_exam"
+        tools:layout="@layout/fragment_breast_exam" >
+        <action
+            android:id="@+id/action_breastExamFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadToServerFragment"
+        android:name="com.example.swapnapurtiapp.UploadToServerFragment"
+        android:label="fragment_upload_to_server"
+        tools:layout="@layout/fragment_upload_to_server" >
+        <action
+            android:id="@+id/action_uploadToServerFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+</navigation>

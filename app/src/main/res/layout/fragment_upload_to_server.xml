@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadToServerFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:textColor="#FFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+
+
+
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutUploadFragmentPersonalInfoForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="4"
+                                android:textAlignment="center"
+                                android:padding="10dp"
+                                android:textColor="#FFFFFF"
+                                android:text="Upload data to online server" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <Button
+                                android:id="@+id/buttonUploadDataPickDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:text="Pick date"
+                                android:padding="9dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="Selected date:"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewUploadDataDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="1900-01-01"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="2"
+                                android:textAlignment="center"
+                                android:padding="10dp"
+                                android:textColor="#FFFFFF"
+                                android:text="Personal Information Form" />
+                            <Button
+                                android:id="@+id/buttonUploadDataPersonalInfoFormSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Search"
+                                android:padding="9dp"
+                                />
+                            <Button
+                                android:id="@+id/buttonUploadDataPersonalInfoFormSend"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Send"
+                                android:padding="9dp"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textViewUploadDataSelectedPersonalInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="4"
+                                android:text="Selected :"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxUploadDataPersonalInfoSelectAll"
+                                android:layout_column="0"
+                                android:gravity="start"
+                                android:padding="9dp"
+                                android:textColor="#FFFFFF"
+                                android:text="Select All">
+
+                            </CheckBox>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="Unique ID"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Village"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="Name"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="Sex"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="Age"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="6"
+                                android:text="ContactNo"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="7"
+                                android:text="Oral Symptoms"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="8"
+                                android:text="Breast Symptoms"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="9"
+                                android:text="Cervix Symptoms"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="10"
+                                android:text="DEOName"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="11"
+                                android:textColor="#FFFFFF"
+                                android:text="DEODate"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="12"
+                                android:text="Saved at server"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Add a blue line. -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+
+                                android:layout_span="13"
+                                android:background="@android:color/holo_blue_dark" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutUploadFragmentOralExamForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="2"
+                                android:textAlignment="center"
+                                android:text="Oral Examination Form"
+                                android:textColor="#FFFFFF"
+                                android:padding="10dp"/>
+                            <Button
+                                android:id="@+id/buttonUploadDataOralExamFormSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Search"
+                                android:padding="9dp"
+                                />
+                            <Button
+                                android:id="@+id/buttonUploadDataOralExamFormSend"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Send"
+                                android:padding="9dp"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textViewUploadDataSelectedOralExamForm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="4"
+                                android:text="Selected :"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxUploadDataOralExamFormSelectAll"
+                                android:layout_column="0"
+                                android:gravity="start"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"
+                                android:text="Select All">
+
+                            </CheckBox>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="Unique ID"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Village"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="Name"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="Sex"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:textColor="#FFFFFF"
+                                android:text="Age"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="6"
+                                android:text="ContactNo"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="7"
+                                android:text="Oral Hygiene"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="8"
+                                android:text="Screen positive"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="9"
+                                android:text="Lesion type"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="10"
+                                android:text="DEOName"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="11"
+                                android:text="DEODate"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="12"
+                                android:textColor="#FFFFFF"
+                                android:text="Saved at server"
+                                android:padding="9dp"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Add a blue line. -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+
+                                android:layout_span="13"
+                                android:background="@android:color/holo_blue_dark" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/tableLayoutUploadFragmentBreastExamForm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp">
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="2"
+                                android:textAlignment="center"
+                                android:text="Breast Examination Form"
+                                android:textColor="#FFFFFF"
+                                android:padding="10dp"/>
+                            <Button
+                                android:id="@+id/buttonUploadDataBreastExamFormSearch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Search"
+                                android:padding="9dp"
+                                />
+                            <Button
+                                android:id="@+id/buttonUploadDataBreastExamFormSend"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Send"
+                                android:padding="9dp"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textViewUploadDataSelectedBreastExamForm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="4"
+                                android:text="Selected :"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="20dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxUploadDataBreastExamFormSelectAll"
+                                android:layout_column="0"
+                                android:gravity="start"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"
+                                android:text="Select All">
+
+                            </CheckBox>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="Unique ID"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="Village"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="Name"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="Sex"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:textColor="#FFFFFF"
+                                android:text="Age"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="6"
+                                android:text="ContactNo"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="7"
+                                android:text="Breast lumps"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="8"
+                                android:text="Nipple discharge"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="9"
+                                android:text="Other Lesion"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="10"
+                                android:text="DEOName"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="11"
+                                android:text="DEODate"
+                                android:textColor="#FFFFFF"
+                                android:padding="9dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_column="12"
+                                android:textColor="#FFFFFF"
+                                android:text="Saved at server"
+                                android:padding="9dp"/>
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <!-- Add a blue line. -->
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+
+                                android:layout_span="13"
+                                android:background="@android:color/holo_blue_dark" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <EditText
+                        android:id="@+id/editTextUploadDataMultiLineLog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_span="3"
+                        android:inputType="textMultiLine"
+                        android:lines="8"
+                        android:textColor="#FFFFFF"
+                        android:maxLines="2000"
+                        android:minLines="6"
+                        android:padding="9dp"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
