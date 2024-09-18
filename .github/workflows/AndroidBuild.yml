@@ -1,0 +1,28 @@
+name: SwapnapurtiBuild
+on:
+  pull_request :
+    branches : [ main ]
+  push :
+    branches : [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name : Checkout
+        uses: actions/checkout@v4.1.0
+
+      - name: Setup java sdk
+        uses: actions/setup-java@v3.13.0
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+
+      - name: Build with gradle
+        run: ./gradlew build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3.1.3
+        with:
+          name: SwapnapurtiApp.apk
+          path: app/build/outputs/apk/app-debug.apk
